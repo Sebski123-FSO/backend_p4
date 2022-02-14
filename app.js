@@ -1,3 +1,4 @@
+require("express-async-errors");
 const bodyParser = require("body-parser");
 const config = require("./utils/config");
 const express = require("express");
