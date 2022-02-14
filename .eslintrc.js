@@ -8,6 +8,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 13,
   },
+  plugins: ["require-sort"],
   rules: {
     eqeqeq: "error",
     "no-trailing-spaces": "error",
@@ -18,5 +19,6 @@ module.exports = {
     "linebreak-style": ["error", "windows"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
+    "require-sort/require-sort": "error",
   },
 };
