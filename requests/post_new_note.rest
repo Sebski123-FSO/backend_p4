@@ -3,5 +3,6 @@ content-type: application/json
 
 {
     "content":"rest test",
-    "important": true
+    "important": true,
+    "userId": "620c0b68104c6524d8ea01de"
 }
