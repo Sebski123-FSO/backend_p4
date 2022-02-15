@@ -6,6 +6,8 @@ const app = express();
 const logger = require("./utils/logger");
 const middleware = require("./utils/middleware");
 const mongoose = require("mongoose");
+// eslint-disable-next-line require-sort/require-sort
+const loginRouter = require("./controllers/login");
 const notesRouter = require("./controllers/notes");
 const usersRouter = require("./controllers/users");
 
@@ -26,6 +28,7 @@ app.use(middleware.requestLogger);
 
 app.use("/api/notes", notesRouter);
 app.use("/api/users", usersRouter);
+app.use("/api/login", loginRouter);
 
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);

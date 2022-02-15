@@ -1,5 +1,6 @@
 POST http://localhost:3001/api/notes/ HTTP/1.1
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYyMGMwYjY4MTA0YzY1MjRkOGVhMDFkZSIsImlhdCI6MTY0NDk1OTA3Nn0.nehQ8JD8B8Maji1LqZADtgObN8CztgDKFV1_zbrgvZE
 
 {
     "content":"rest test",
